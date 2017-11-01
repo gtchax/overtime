@@ -11,6 +11,13 @@ module Overtime
    
     config.load_defaults 5.1
 
+    config.generators do |g|
+      g.template_engine  :haml
+     
+    end
+
+
+
     config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   end
 end
