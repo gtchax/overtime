@@ -7,16 +7,17 @@
         %span.icon-bar.bar1
         %span.icon-bar.bar2
         %span.icon-bar.bar3
-      %a{:href => "http://www.creative-tim.com"}
+      %a{:href => "http://localhost:3000"}
         .logo-container
           .brand.homepage
             Time Tracker
   
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
-        %li= link_to 'Home', root_path
+        %li{:class =>"#{ active?(root_path)}"}
+          = link_to 'Home', root_path
         %li= link_to 'Time Entries', posts_path
-        %li= link_to 'Messages', posts_path
+        %li= link_to 'Messages', new_post_path
         %li.dropdown.pull-right
           %a{:href => "#", "data-toggle" => "dropdown", :class => "dropdown-toggle"} 
             Account

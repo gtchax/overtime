@@ -1,2 +1,24 @@
 .container{:style => "margin-top: 37px;"}
   %h1 Posts
+  .card
+    .card-header{"data-background-color" => "blue"}
+      %h4.title List of Entries
+      %p.category latest entries 
+
+    .card-content.table-responsive.table-full-width
+      %table.table
+        %thead
+          %tr
+            %th.bold Employe ID
+            %th.bold Date
+            %th.bold Employee
+            %th.bold Rationale
+           
+        %tbody
+          - @posts.each do |post|
+            %tr
+              %td= post.id
+              %td= post.date
+              %td= post.user.last_name
+              %td= truncate(post.rationale)
+             
