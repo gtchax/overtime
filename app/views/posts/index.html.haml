@@ -15,10 +15,5 @@
             %th.bold Rationale
            
         %tbody
-          - @posts.each do |post|
-            %tr
-              %td= post.id
-              %td= post.date
-              %td= post.user.last_name
-              %td= truncate(post.rationale)
-             
+          = render @posts
+           
