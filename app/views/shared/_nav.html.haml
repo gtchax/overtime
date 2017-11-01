@@ -1,0 +1,31 @@
+%nav.navbar.navbar-transparent.navbar-fixed-top{:style => "background-color: #20232a;padding:0;"}
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button#menu-toggle.navbar-toggle{:type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar.bar1
+        %span.icon-bar.bar2
+        %span.icon-bar.bar3
+      %a{:href => "http://www.creative-tim.com"}
+        .logo-container
+          .brand.homepage
+            Time Tracker
+  
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Home', root_path
+        %li= link_to 'Time Entries', posts_path
+        %li= link_to 'Messages', posts_path
+        %li.dropdown.pull-right
+          %a{:href => "#", "data-toggle" => "dropdown", :class => "dropdown-toggle"} 
+            Account
+            %strong.caret
+          %ul.dropdown-menu
+            %li= link_to 'Edit Details', edit_user_registration_path
+            %li.divider
+              %li= link_to 'Log Out', destroy_user_session_path, method: :delete
+         
+  
+               
+      

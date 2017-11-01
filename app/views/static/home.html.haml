@@ -1,1 +1,62 @@
-%h1 This is the homepage
+
+.page-header.header-filter{:style => "background-color: #282d34;"}
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        %h1.title.text-center.homepage Home Page
+.main.main-raised
+  .section
+    .container
+      .row
+        .col-md-12
+          / License Row
+          #license.tim-row.tim-row-first
+            %h2.text-center License
+            %legend
+            %p
+              Currently, on
+              %a{:href => "www.creative-tim.com", :target => "_blank"} Creative Tim
+              you can get the products with two types of licenses: Personal or Developer. All the freebies are licensed to Personal License as default. If you are making a paid purchase, be sure to go through the table with the rights and the guidelines, so you can know what is the best fit for you. View the rights table and the description for each license on our
+              = succeed "." do
+                %a{:href => "http://www.creative-tim.com/license?ref=license-page-mk-free", :target => "_blank"} Official License Page
+    
+          #tutorial.tim-row
+            %h2.text-center Short Description and Usage
+            %legend
+            %p
+              %b Material Dashboard
+              is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard was built over the popular Bootstrap framework and it comes with a couple of third-party plugins redesigned to fit in with the rest of the elements.
+            %p
+              Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate JS plugins that take a little bit more effort. It the end the result will be worth it.
+    
+%footer.footer.footer-transparent
+  .container
+    %nav.pull-left
+      %ul
+        %li
+          %a{:href => "http://www.creative-tim.com"}
+            Creative Tim
+        %li
+          %a{:href => "http://presentation.creative-tim.com"}
+            About Us
+        %li
+          %a{:href => "http://blog.creative-tim.com"}
+            Blog
+        %li
+          %a{:href => "http://www.creative-tim.com/license"}
+            Licenses
+    .social-area.pull-right
+      %a.btn.btn-just-icon.btn-twitter.btn-simple{:href => "https://twitter.com/CreativeTim"}
+        %i.fa.fa-twitter
+      %a.btn.btn-just-icon.btn-facebook.btn-simple{:href => "https://www.facebook.com/CreativeTim"}
+        %i.fa.fa-facebook-square
+      %a.btn.btn-just-icon.btn-google.btn-simple{:href => "https://plus.google.com/+CreativetimPage"}
+        %i.fa.fa-google-plus
+      %a.btn.btn-just-icon.btn-instagram.btn-simple{:href => "https://www.instagram.com/creativetimofficial"}
+        %i.fa.fa-instagram
+    .copyright
+      ©
+      :javascript
+        document.write(new Date().getFullYear())
+      Overtime
+

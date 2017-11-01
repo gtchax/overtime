@@ -6,7 +6,9 @@
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+    = javascript_include_tag 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'
  
 
-  %body
+  %body.components-page
+    = render '/shared/nav'
     = yield 
