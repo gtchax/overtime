@@ -13,7 +13,7 @@ module Overtime
 
     config.generators do |g|
       g.template_engine  :haml
-     
+      g.factory_bot dir: 'spec/factories'
     end
 
 

@@ -9,15 +9,17 @@
         %span.icon-bar.bar3
       %a{:href => "http://localhost:3000"}
         .logo-container
-          .brand.homepage
+          .homepage
             Time Tracker
   
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
         %li{:class =>"#{ active?(root_path)}"}
           = link_to 'Home', root_path
-        %li= link_to 'Time Entries', posts_path
-        %li= link_to 'Messages', new_post_path
+        %li{:class =>"#{ active?(posts_path)}"}
+          = link_to 'Time Entries', posts_path
+        %li{:class =>"#{ active?(new_post_path)}"}
+          = link_to 'Add New Entry', new_post_path, id: 'new_post_from_nav'
         %li.dropdown.pull-right
           %a{:href => "#", "data-toggle" => "dropdown", :class => "dropdown-toggle"} 
             Account

@@ -20,11 +20,18 @@
 // @import "material-dashboard.scss";
 @import "posts.scss";
 @import "home.scss";
-
 .homepage {
-    color: #55dbf8
+    color: #55dbf8;
+    display: inline-block;
+    font-size: 18px;
+    padding-top: 15px;
 }
 
 .bold {
     font-weight: 700;
+}
+
+h4.homepage:hover {
+    text-decoration: none;
+     color: #52a0af;
 }

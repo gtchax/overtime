@@ -4,7 +4,7 @@ RSpec.describe Post, type: :model do
   describe "Creation" do
 
     before do
-         @post = Post.create(date: Date.today, rationale: "Some sort of rationale")
+         @post = FactoryGirl.create(:post)
     end
 
     it 'Can be created' do
