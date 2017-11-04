@@ -12,3 +12,5 @@
   %body.components-page
     = render '/shared/nav'
     = yield 
+    
+    = js add_gritter(flash[:notice], title: "Overtime App Notification", sticky: false) 

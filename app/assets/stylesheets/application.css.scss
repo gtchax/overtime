@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- 
+
  *= require_self
  */
 
@@ -20,6 +20,7 @@
 // @import "material-dashboard.scss";
 @import "posts.scss";
 @import "home.scss";
+@import "gritter";
 .homepage {
     color: #55dbf8;
     display: inline-block;
@@ -33,5 +34,5 @@
 
 h4.homepage:hover {
     text-decoration: none;
-     color: #52a0af;
+    color: #52a0af;
 }
